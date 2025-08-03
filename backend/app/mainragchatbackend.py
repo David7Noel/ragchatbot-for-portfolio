@@ -28,10 +28,10 @@ app.include_router(query.router, prefix="/query", tags=["Query"])
 app.include_router(pdf.router, prefix="/pdf", tags=["PDF"])
 app.include_router(langchain.router, prefix="/rag", tags=["RAG"])
 
-# Serve static PDF files, placed in backend/assets/
+# Serve static PDF files, placed in RAG-Chatbot_mit_Portfolio-Integration/assets/
 app.mount(
     "/assets",
-    StaticFiles(directory=os.path.join(os.path.dirname(__file__), '..', 'assets')),
+    StaticFiles(directory=os.path.join(os.path.dirname(__file__), '..', '..', 'assets')),
     name="assets"
 )
 
