@@ -25,3 +25,10 @@ dist-ssr
 
 # Environment variables – sensible Daten
 **/.env
+# Ignoriere Python-Virtual‑Environments
+/backend/venv/
+/backend/venv/**
+# Weitere generierte oder große Dateien:
+# z. B. Log, PDF, Binärdateien
+*.log
+*.pdf
