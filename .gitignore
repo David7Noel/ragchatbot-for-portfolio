@@ -1,0 +1,61 @@
+    # Logs und temporäre Dateien
+    logs/
+    *.log
+    npm-debug.log*
+    yarn-debug.log*
+    pnpm-debug.log*
+    lerna-debug.log*
+    4.36                   # Temporäre Datei aus deiner git status Ausgabe
+    .~lock.* # LibreOffice lock files
+    *.swp
+    *.bak
+    *.jar                  # Ignoriert JAR-Dateien wie bfg.jar
+
+    # Python Environments und Cache
+    __pycache__/           # Ignoriert alle __pycache__ Ordner
+    *.pyc
+    *.pyo
+    *.pyd
+    .Python
+    env/
+    venv/                  # DIESE ZEILE IST SEHR WICHTIG!
+    venv_py312/            # Speziell dein lokales venv
+    lib/python*/site-packages/
+    .tox/
+    .coverage
+    .coverage.*
+    .ipynb_checkpoints
+    .pytest_cache/
+    htmlcov/
+    .nox/
+    .egg-info/
+
+    # Lokale Daten / Datenbanken / Caches / Modelle (SEHR WICHTIG)
+    chroma_db/             # Deine Vektordatenbank
+    hf_cache/              # Hugging Face Cache
+    local_models/          # Lokale Ollama Modelle
+    *.sqlite3              # Für SQLite-Datenbanken, falls du sie nutzt
+
+    # Editor- und OS-generierte Dateien
+    .idea/                 # IntelliJ/PyCharm IDE-Dateien
+    .vscode/               # VS Code-Dateien (aber nicht extensions.json)
+    !.vscode/extensions.json # Diese Datei kann nützlich sein, um empfohlene Erweiterungen zu teilen
+    .DS_Store              # macOS spezifisch
+    .Trashes               # macOS spezifisch
+    Thumbs.db              # Windows spezifisch
+    *.suo                  # Visual Studio / .NET
+    *.ntvs* # Visual Studio / .NET
+    *.njsproj              # Visual Studio / .NET
+    *.sln                  # Visual Studio / .NET
+
+    # Sensible Daten / Environment Files
+    .env
+    .env.*
+    .env.local
+    .env.txt
+    **/.env                # Fängt .env-Dateien in Unterverzeichnissen ab
+
+    # PDF-Dateien (Ignoriere diese nur, wenn sie generiert werden und nicht Teil des Repos sein sollen)
+    # Wenn du Beispieldateien haben möchtest, kommentiere diese Zeile aus:
+    # # *.pdf
+    
