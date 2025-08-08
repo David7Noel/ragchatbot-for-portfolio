@@ -1,11 +1,4 @@
-try:
-    import fastapi
-    print("FastAPI ist installiert.")
-except ImportError:
-    print("FastAPI ist nicht installiert.")
+from transformers import AutoTokenizer
+import sentence_transformers
 
-try:
-    from dotenv import load_dotenv
-    print("python-dotenv ist installiert.")
-except ImportError:
-    print("python-dotenv ist nicht installiert.")
+print("Pakete wurden erfolgreich importiert!")

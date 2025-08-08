@@ -1,14 +1,1 @@
-fastapi==0.116.1
-uvicorn==0.35.0
-langchain==0.3.27
-langchain-openai==0.3.28
-langchain-huggingface==0.3.1
-langchain-community==0.0.10
-chromadb
-sentence-transformers
-transformers
-torch
-requests
-gradio
-python-dotenv
-pydantic
+fastapiuvicorngradiolangchain-ollama # NEU: Benötigt für OllamaLLMlangchain-core # Bleibt, da OllamaLLM davon abhängtpydanticrequests

@@ -12,7 +12,7 @@
     *.jar                  # Ignoriert JAR-Dateien wie bfg.jar
 
     # Python Environments und Cache
-    __pycache__/
+    __pycache__/           # Ignoriert alle __pycache__ Ordner
     *.pyc
     *.pyo
     *.pyd
@@ -30,7 +30,7 @@
     .nox/
     .egg-info/
 
-    # Lokale Daten / Datenbanken / Caches / Modelle
+    # Lokale Daten / Datenbanken / Caches / Modelle (SEHR WICHTIG)
     chroma_db/             # Deine Vektordatenbank
     hf_cache/              # Hugging Face Cache
     local_models/          # Lokale Ollama Modelle
@@ -55,7 +55,7 @@
     .env.txt
     **/.env                # Fängt .env-Dateien in Unterverzeichnissen ab
 
-    # PDF-Dateien (Nur ignorieren, wenn sie generiert werden und nicht Teil des Repos sein sollen)
+    # PDF-Dateien (Ignoriere diese nur, wenn sie generiert werden und nicht Teil des Repos sein sollen)
     # Wenn du Beispieldateien haben möchtest, kommentiere diese Zeile aus:
-    # *.pdf
+    # # *.pdf
     
