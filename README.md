@@ -1,5 +1,5 @@
 💬 Einfacher Chatbot mit Ollama, FastAPI und Gradio – Lokale LLM-Inferenz
-Willkommen zu meinem neuesten Projekt: Ein minimalistischer Full-Stack-Chatbot, der ein großes Sprachmodell (LLM) komplett lokal ausführt! In diesem Video zeige ich dir, wie dieser Chatbot funktioniert und welche Technologien dahinterstecken.
+Willkommen zu meinem neuesten Projekt: Ein minimalistischer Full-Stack-Chatbot, der ein großes Sprachmodell (LLM) komplett lokal ausführt!
 
 ✨ Funktionen
 Lokale LLM-Inferenz: Nutzt Ollama, um große Sprachmodelle (LLMs) wie Gemma oder Llama 2 direkt auf deinem Computer auszuführen – keine Cloud-APIs, keine Kosten, maximaler Datenschutz!
