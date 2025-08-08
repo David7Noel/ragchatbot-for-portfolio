@@ -1,50 +1,61 @@
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-lerna-debug.log*
+    # Logs und temporäre Dateien
+    logs/
+    *.log
+    npm-debug.log*
+    yarn-debug.log*
+    pnpm-debug.log*
+    lerna-debug.log*
+    4.36                   # Temporäre Datei aus deiner git status Ausgabe
+    .~lock.* # LibreOffice lock files
+    *.swp
+    *.bak
+    *.jar                  # Ignoriert JAR-Dateien wie bfg.jar
 
-# Node Modules & Build
-node_modules/
-dist/
-dist-ssr/
-*.local
+    # Python Environments und Cache
+    __pycache__/
+    *.pyc
+    *.pyo
+    *.pyd
+    .Python
+    env/
+    venv/
+    venv_py312/            # Speziell dein lokales venv
+    lib/python*/site-packages/
+    .tox/
+    .coverage
+    .coverage.*
+    .ipynb_checkpoints
+    .pytest_cache/
+    htmlcov/
+    .nox/
+    .egg-info/
 
-# Editor/Auswahl-Dateien
-.vscode/*
-!.vscode/extensions.json
-.idea/
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+    # Lokale Daten / Datenbanken / Caches / Modelle
+    chroma_db/             # Deine Vektordatenbank
+    hf_cache/              # Hugging Face Cache
+    local_models/          # Lokale Ollama Modelle
+    *.sqlite3              # Für SQLite-Datenbanken, falls du sie nutzt
 
-# Sensible Daten / Environment Files
-**/.env
-.env
-.env.*
-.env.local
-.env.txt
+    # Editor- und OS-generierte Dateien
+    .idea/                 # IntelliJ/PyCharm IDE-Dateien
+    .vscode/               # VS Code-Dateien (aber nicht extensions.json)
+    !.vscode/extensions.json # Diese Datei kann nützlich sein, um empfohlene Erweiterungen zu teilen
+    .DS_Store              # macOS spezifisch
+    .Trashes               # macOS spezifisch
+    Thumbs.db              # Windows spezifisch
+    *.suo                  # Visual Studio / .NET
+    *.ntvs* # Visual Studio / .NET
+    *.njsproj              # Visual Studio / .NET
+    *.sln                  # Visual Studio / .NET
 
-# Python Virtual Environments
-venv_py312/
-venv_py312/**
+    # Sensible Daten / Environment Files
+    .env
+    .env.*
+    .env.local
+    .env.txt
+    **/.env                # Fängt .env-Dateien in Unterverzeichnissen ab
 
-# Python Bytecode & Cache
-__pycache__/
-**/__pycache__/
-*.py[cod]
-*$py.class
-
-# Weitere temporäre oder generierte Dateien
-*.pdf
-*.jar
-gradio_app.py
-
-# Falls du weitere Build- oder Log-Verzeichnisse nutzt
-backend/logs/
-frontend/logs/
+    # PDF-Dateien (Nur ignorieren, wenn sie generiert werden und nicht Teil des Repos sein sollen)
+    # Wenn du Beispieldateien haben möchtest, kommentiere diese Zeile aus:
+    # *.pdf
+    
