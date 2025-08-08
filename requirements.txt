@@ -1,0 +1,1 @@
+fastapiuvicorngradiolangchain-ollama # NEU: Benötigt für OllamaLLMlangchain-core # Bleibt, da OllamaLLM davon abhängtpydanticrequests
