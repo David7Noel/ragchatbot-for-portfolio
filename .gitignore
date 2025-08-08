@@ -19,7 +19,7 @@
     .Python
     env/
     venv/                  # DIESE ZEILE IST SEHR WICHTIG!
-           # Speziell dein lokales venv
+    # Speziell dein lokales venv
     lib/python*/site-packages/
     .tox/
     .coverage
