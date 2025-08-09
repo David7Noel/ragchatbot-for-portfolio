@@ -1,8 +1,11 @@
 from fastapi import FastAPI
-from app.routers import llm_service # Geändert von langchain
+# Importiere BEIDE spezifischen Router aus llm_service
+from app.routers.llm_service import chat_router, rag_router
 
-app = FastAPI(title="Einfacher Chatbot Backend") # Titel aktualisiert
+app = FastAPI(title="Einfacher Chatbot Backend", version="0.1.0") # Titel und Version aktualisiert
 
-# Füge den neuen Router hinzu
-app.include_router(llm_service.router, prefix="/chat") # Präfix und Router-Name geändert
+# Binde den Chat-Router ein (Präfix ist bereits im Router definiert)
+app.include_router(chat_router)
 
+# Binde den RAG-Router ein (Präfix ist bereits im Router definiert)
+app.include_router(rag_router)
